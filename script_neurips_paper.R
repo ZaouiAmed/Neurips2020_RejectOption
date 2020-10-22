@@ -17,7 +17,7 @@ library(MASS) ##for Boston dataset
 
 
 #####################################################################################################
-##Function decompData used to split the data into three subset (Train, Unlabeled and Validation)
+##Function decompData used to split the data into three subsets (Train, Unlabeled and Validation)
 #####################################################################################################
 decompData <- function(sampleDat, sizeT = 256, sizeU = 100){
 
