@@ -72,11 +72,12 @@ for (Nrep in 1:30){
      results[Nrep, 2] <- 1- length(accept)/length(dataTest$Y) ##computation of the rejection rate
   }
 
+cat("\n", "desired rejection =",eps, "\n")
 cat("\n", "obtained results (mean)", "\n")
-print(round(apply(results,2,mean), digits = 3))
+print(round(apply(results,2,mean), digits = 2))
 
 cat("\n", "obtained results (sd)", "\n")
-print(round(apply(results,2,sd), digits = 3))
+print(round(apply(results,2,sd), digits = 2))
 
 
 
